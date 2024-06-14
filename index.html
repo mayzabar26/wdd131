@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - <span>Mayza Costa Barbosa</span></h1>
-        <nav>
+        <h1 class="header">WDD 131 - Dynamic Web Fundamentals - <span class="name">Mayza Costa Barbosa</span></h1>
+        <nav id="menu">
             <ul>
                 <li><a href="https://www.linkedin.com/in/mayza-barbosa-9326ba177/">LinkedIn</a></li>
                 <li><a href="https://byui.instructure.com/">I-Learn</a></li>
@@ -32,7 +32,7 @@
             </p>
             <img class="myPhoto" src="images/myPhoto.jpg" alt="Mayza Costa Barbosa">
 
-            <h3>São Luís, Maranhão</h3>
+            <h3 class="city">São Luís, Maranhão</h3>
             <p class="myCity">
                 Brazil is the largest country in South America, known for its vibrant culture and diverse landscapes. It boasts the Amazon Rainforest, 
                 which is the world's largest tropical rainforest and home to an incredible variety of wildlife. The country is famous for its lively festivals, 
@@ -41,12 +41,12 @@
                 Samba, perhaps the most iconic, is not just a music style but a symbol of national identity. The infectious rhythms of samba can be 
                 heard throughout the country, particularly during Carnival, when cities come alive with music and dance.
             </p>
-            <img class="myPhoto" src="images/brazilFlag.png" alt="Brazil's flag">
+            <img class="brazilFlag" src="images/brazilFlag.png" alt="Brazil's flag">
         </section>
 
         <section class="cardResourses"></section>
         <h3>Web Dev Resources</h3>
-        <ul>
+        <ul id="resourses">
             <li><a href="https://www.w3schools.com/js/default.asp">W3shools</a></li>
             <li><a href="https://www.jshero.net/en/home.html">JavaScript Hero</a></li>
             <li><a href="https://coddy.tech/">Coddy Tech</a></li>
@@ -54,8 +54,8 @@
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> - Mayza Costa Barbosa - Brazil</p>
-        <p id="lastModified"><!--javascript code aqui--></p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
     </footer>  
-    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

@@ -1,1 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {margin: 0 ; padding: 0; box-sizing: border-box;}
+
+/*HTML'S body*/
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    font-family: "Bebas Neue", "Open Sans", "Roboto", sans-serif;
+}
+
+
+/*Header and nav*/
+header {
+    grid-column: 1/4;
+    background: red;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+.name {color: white; font-family:"Roboto", sans-serif; font-style: italic;}
+
+#menu ul {
+    padding: 0;
+    margin: 0;   
+}
+
+#menu ul li {display: inline; }
+
+#menu ul li a {
+    color: white;
+    padding: 120px;
+    text-decoration: none;
+}   
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    grid-column: 1 / 3;
+    justify-content: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+#menu ul li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/*Main Content*/
+main {
+    grid-column: 1/2;
+    grid-column: 3/4;
+    padding: 20px;
+    
+}
+
+.card {
+    grid-column: 1/2;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2rem;
+}
+
+h3 {
+    background: blue;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.aboutMe {}
+
+.myPhoto {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    border-style: solid;
+    border-color: gray;
+}
+.city {
+    background: white;
+}
+
+.myCity {
+    
+}
+
+.brazilFlag {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    border-style: solid;
+    border-color: gray;
+}
+
+.cardResourses {
+    grid-column: 2/3;
+    border-style: solid;
+    border-color: gray;
+}
+
+#resourses ul {}
+
+#resourses ul li {}
+
+#resourses ul li a {}
+
+/*Footer Content*/
+footer {
+    grid-column: 1/3;
+    background: green;
+}
+
+#currentyear
+
+#lastModified {}
+
