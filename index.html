@@ -11,23 +11,51 @@
 
 <body>
     <header>
-        <h1 class="title">WDD 131 - Dynamic Web Fundamentals -</h1><h1 class="myName">Mayza Costa Barbosa</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span>Mayza Costa Barbosa</span></h1>
         <nav>
             <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">I-Learn</a></li>
-                <li><a href="#">Scripture</a></li>
+                <li><a href="https://www.linkedin.com/in/mayza-barbosa-9326ba177/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/135?lang=eng#p3">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="cardAboutMe"></section>
-        <section class="cardWebDevResourses"></section>
+        <section class="card">
+            <h3>About Me</h3>
+            <p class="aboutMe">
+                Hey there! My name is Mayza Costa Barbosa. I'm from São Luís city in Maranhão state. São Luís is a small island in the northern part of Brazil, 
+                known as the island of love. I absolutely love learning new things, diving into books, and anything related to music and creativity. 
+                My favorite bands are ABBA, Bee Gees, and Queen, but I also adore musicians like Cyndi Lauper and Michael Jackson. 
+                My grandma influenced my music taste, so I guess you could say I have an old soul—I just love music from the 60s to the 90s.
+            </p>
+            <img class="myPhoto" src="images/myPhoto.jpg" alt="Mayza Costa Barbosa">
+
+            <h3>São Luís, Maranhão</h3>
+            <p class="myCity">
+                Brazil is the largest country in South America, known for its vibrant culture and diverse landscapes. It boasts the Amazon Rainforest, 
+                which is the world's largest tropical rainforest and home to an incredible variety of wildlife. The country is famous for its lively festivals, 
+                especially Carnival, which features samba music, colorful parades, and street parties. One fascinating aspect of Brazilian culture is 
+                its rich musical heritage. Brazil has produced many influential music genres, including bossa nova, forró, and tropicalia. 
+                Samba, perhaps the most iconic, is not just a music style but a symbol of national identity. The infectious rhythms of samba can be 
+                heard throughout the country, particularly during Carnival, when cities come alive with music and dance.
+            </p>
+            <img class="myPhoto" src="images/brazilFlag.png" alt="Brazil's flag">
+        </section>
+
+        <section class="cardResourses"></section>
+        <h3>Web Dev Resources</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/js/default.asp">W3shools</a></li>
+            <li><a href="https://www.jshero.net/en/home.html">JavaScript Hero</a></li>
+            <li><a href="https://coddy.tech/">Coddy Tech</a></li>
+        </ul>
     </main>
     <footer>
-        <p><!--simbolo copyright, ano atual, meu nome, estado e país--></p>
+        <p>&copy; <span id="currentyear"></span> - Mayza Costa Barbosa - Brazil</p>
         <p id="lastModified"><!--javascript code aqui--></p>
     </footer>  
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
