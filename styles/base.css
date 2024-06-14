@@ -53,11 +53,11 @@ main {
     color: white;
 }
 
-.card .aboutMe {padding: 20px;}
+.card .aboutMe {padding: 15px;}
 
 .card .aboutMe div {display: flex; gap: 2rem; align-items: center;}
 
-figure {border-color: 2px solid gray;}
+.myPhoto {border: 2px solid gray;}
 
 .city {
     height: 1px;
