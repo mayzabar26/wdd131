@@ -57,7 +57,7 @@ main {
 
 .card .aboutMe div {display: flex; gap: 2rem; align-items: center;}
 
-.myPhoto {border: 2px solid gray;}
+.myPhoto {border: 1px solid gray;}
 
 .city {
     height: 1px;
@@ -74,7 +74,7 @@ figcaption {
     text-align: center;
 }
 
-.brazilFlag {border: 2px solid gray;}
+.brazilFlag {border: 1px solid gray;}
 
 h3 {text-align: center; margin-top: 2rem;}
 
