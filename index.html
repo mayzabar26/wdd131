@@ -7,55 +7,65 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mayza Costa Barbosa - Web Programming, HTML, CSS, JavaScript, BYU-Idaho">
     <meta name="author" content="Mayza Costa Barbosa">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1 class="header">WDD 131 - Dynamic Web Fundamentals - <span class="name">Mayza Costa Barbosa</span></h1>
-        <nav id="menu">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/mayza-barbosa-9326ba177/">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/135?lang=eng#p3">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span>Mayza Costa Barbosa</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/mayza-barbosa-9326ba177/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/135?lang=eng#p3">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
+
     <main>
         <section class="card">
-            <h3>About Me</h3>
-            <p class="aboutMe">
-                Hey there! My name is Mayza Costa Barbosa. I'm from São Luís city in Maranhão state. São Luís is a small island in the northern part of Brazil, 
-                known as the island of love. I absolutely love learning new things, diving into books, and anything related to music and creativity. 
-                My favorite bands are ABBA, Bee Gees, and Queen, but I also adore musicians like Cyndi Lauper and Michael Jackson. 
-                My grandma influenced my music taste, so I guess you could say I have an old soul—I just love music from the 60s to the 90s.
-            </p>
-            <img class="myPhoto" src="images/myPhoto.jpg" alt="Mayza Costa Barbosa">
-
-            <h3 class="city">São Luís, Maranhão</h3>
-            <p class="myCity">
-                Brazil is the largest country in South America, known for its vibrant culture and diverse landscapes. It boasts the Amazon Rainforest, 
-                which is the world's largest tropical rainforest and home to an incredible variety of wildlife. The country is famous for its lively festivals, 
-                especially Carnival, which features samba music, colorful parades, and street parties. One fascinating aspect of Brazilian culture is 
-                its rich musical heritage. Brazil has produced many influential music genres, including bossa nova, forró, and tropicalia. 
-                Samba, perhaps the most iconic, is not just a music style but a symbol of national identity. The infectious rhythms of samba can be 
-                heard throughout the country, particularly during Carnival, when cities come alive with music and dance.
-            </p>
-            <img class="brazilFlag" src="images/brazilFlag.png" alt="Brazil's flag">
+            <h2>About Me</h2>
+            <div class="aboutMe">
+                <div>
+                    <p>
+                        Hey there! My name is Mayza Costa Barbosa. I'm from São Luís city in Maranhão state. São Luís is a small island in the northern part of Brazil, 
+                        known as the island of love. I absolutely love learning new things, diving into books, and anything related to music and creativity. 
+                        My favorite bands are ABBA, Bee Gees, and Queen, but I also love musicians like Cyndi Lauper and Michael Jackson.
+                    </p>
+                    <figure>
+                        <img class="myPhoto" src="images/myPhoto.jpg" alt="Mayza Costa Barbosa" width="150">
+                    </figure>
+                </div>
+                <h3>São Luís, Maranhão</h3>
+                <div class="city"></div>
+                <div>
+                    <figure>
+                        <img class="brazilFlag" src="images/brazilFlag.png" alt="Brazil's flag" width="150">
+                        <figcaption>Official Flag of Brazil</figcaption>
+                    </figure>
+                    <p>
+                        Brazil is the largest country in South America, known for its vibrant culture and diverse landscapes. The country is famous for its lively festivals, 
+                        especially Carnival, which features samba music, colorful parades, and street parties. One fascinating aspect of Brazilian culture is 
+                        its rich musical heritage. Brazil has produced many influential music genres, including bossa nova, forró, and tropicalia. 
+                        Samba, perhaps the most iconic, is not just a music style but a symbol of national identity.
+                    </p>
+                </div>
+            </div>
         </section>
-
-        <section class="cardResourses"></section>
-        <h3>Web Dev Resources</h3>
-        <ul id="resourses">
-            <li><a href="https://www.w3schools.com/js/default.asp">W3shools</a></li>
-            <li><a href="https://www.jshero.net/en/home.html">JavaScript Hero</a></li>
-            <li><a href="https://coddy.tech/">Coddy Tech</a></li>
-        </ul>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.w3schools.com/js/default.asp">W3Schools</a></li>
+                    <li><a href="https://www.jshero.net/en/home.html">JavaScript Hero</a></li>
+                    <li><a href="https://coddy.tech/">Coddy Tech</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> - Mayza Costa Barbosa - Brazil</p>
+        <p>&copy; <span id="currentyear"></span> 🍒 Mayza Costa Barbosa 🍒 Brazil</p>
         <p id="lastModified"></p>
-        <script src="scripts/getdates.js" defer></script>
     </footer>  
 </body>
 </html>

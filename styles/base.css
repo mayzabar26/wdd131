@@ -1,123 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {margin: 0 ; padding: 0; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 
-/*HTML'S body*/
-body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 2fr 1fr;
-    height: 100vh;
-    font-family: "Bebas Neue", "Open Sans", "Roboto", sans-serif;
-}
+body {background-color: white; color: black; font-family: "Roboto";}
 
+/*Header and Nav*/
+/*Nav content needs to be in display: flex*/
+header {text-align: center; background-color: #4a184a; color: white;}
 
-/*Header and nav*/
-header {
-    grid-column: 1/4;
-    background: red;
-    font-family: "Bebas Neue", sans-serif;
-    padding: 2rem;
-    text-align: center;
-}
-
-.name {color: white; font-family:"Roboto", sans-serif; font-style: italic;}
-
-#menu ul {
-    padding: 0;
-    margin: 0;   
-}
-
-#menu ul li {display: inline; }
-
-#menu ul li a {
-    color: white;
-    padding: 120px;
-    text-decoration: none;
-}   
+h1 {display: block; padding: 20px;}
 
 nav {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: black;
-    grid-column: 1 / 3;
-    justify-content: center;
-    padding: 15px;
-    font-size: 15px;
+    justify-content: space-around;
+    background-color: #d06aff;
+    font-family: "Roboto";
+     
 }
 
-#menu ul li a:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+nav a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    font-weight:bolder ;
+    text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
+nav a:hover {background-color: #ff81ff; color: white;}
 
-/*Main Content*/
+/*Main and sections*/
+/*main content needs to be in grid*/
 main {
-    grid-column: 1/2;
-    grid-column: 3/4;
-    padding: 20px;
-    
+    display: grid;
+    width: 100%;
+    max-width: 1220px;
+    margin: 22px;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.card {
-    grid-column: 1/2;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 2rem;
+.card {border: 1px solid gray; border-radius: 8px;}
+
+.card h2 {
+    background-color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
 }
 
-h3 {
-    background: blue;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-}
+.card .aboutMe {padding: 20px;}
 
-.aboutMe {}
+.card .aboutMe div {display: flex; gap: 2rem; align-items: center;}
 
-.myPhoto {
-    margin: 0;
-    padding: 0;
-    width: 30%;
-    border-style: solid;
-    border-color: gray;
-}
+figure {border-color: 2px solid gray;}
+
 .city {
-    background: white;
+    height: 1px;
+    width: 80%;
+    border-top: 1px solid gray;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.myCity {
-    
+figcaption {
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
 }
 
-.brazilFlag {
-    margin: 0;
-    padding: 0;
-    width: 30%;
-    border-style: solid;
-    border-color: gray;
-}
+.brazilFlag {border: 2px solid gray;}
 
-.cardResourses {
-    grid-column: 2/3;
-    border-style: solid;
-    border-color: gray;
-}
+h3 {text-align: center; margin-top: 2rem;}
 
-#resourses ul {}
+.card:first-child {grid-column: 1/3;}
 
-#resourses ul li {}
+.card:last-child .resources {display: grid; justify-content: center; padding: 20px;}
 
-#resourses ul li a {}
+.card .resources ul a {color: black; text-decoration: none;}
 
-/*Footer Content*/
+/*Footer*/
 footer {
-    grid-column: 1/3;
-    background: green;
+    background-color: #4a184a;
+    text-align: center;
+    padding: 1rem;
+    color: white;
 }
 
-#currentyear
+#lastModified {color: yellow; font-style: italic; font-size: 13px;}
 
-#lastModified {}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    @media (max-width: 960px) {
+        main {
+            grid-template-columns: 1fr; /*Changes to a single column*/
+        }
+    }
+    
+    @media (max-width: 600px) {
+        main {
+            grid-template-columns: 1fr; /*Changes to a single column on smaller screens like celphones*/
+            margin: 10px; /*Reduces the margin around the main content*/
+        }
+    
+        .card {
+            margin-bottom: 20px; /*Spacing between the cards/sections*/
+        }
+    
+        .card .resources {
+            grid-template-columns: 1fr; /*Changes to a single column the resources card/section*/
+            padding: 10px; /*Reduces padding in the resources card/section */
+        }
+    
+        nav a {
+            padding: 10px 20px; /*Reduces padding of navigation links*/
+        }
+    }
+}
