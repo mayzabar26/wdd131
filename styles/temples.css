@@ -100,13 +100,10 @@ footer {
     .navLinks li:last-child {padding-bottom: 1.3rem; }
   }
 
-  @media (max-width: 800px) and (max-width: 1024px){
+  @media (min-width: 800px) and (max-width: 1024px) {
     .navLinks a {font-size: 1.2rem;}
-  }
-
-  @media (max-width: 800px) and (max-width: 1024px){
     figcaption {font-size: 1.3rem;}
-  }
+}
 
   @media (max-width: 600px) {
     header {align-items: flex-start; padding: 10px;}
