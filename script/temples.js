@@ -10,7 +10,6 @@ hamburger.addEventListener('click', () => {
     hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
 });
 
-
 //creating function for current year - footer
 function getCurrentYear() {
     const currentYear = new Date().getFullYear();
