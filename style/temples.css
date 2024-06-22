@@ -1,81 +1,116 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
 
-body {font-family: "Roboto", "Open Sans", "Poppins";}
+body {
+    font-family: "Roboto", "Open Sans", "Poppins";
+    margin: 0;
+    padding: 0;
+}
 
 
-/*Header and h1*/
+/*Header, hamburguer button, title*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
-    padding: 1rem;
-}
-
-h1 {color: black; padding: 1rem; display: block;}
-
-header #menu.open ~ h1 {
-    display: none;
-}
-
-
-/*Nav, ul, li and a*/
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-}
-
-#menu::before {content: "≡";}
-
-#menu.open::before {content: "x";}
-
-/*nav {background-color: red;}*/
-
-.nav-bar {display: none; list-style: none; margin: 0; max-width: 760px;}
-
-.nav-bar.show {display: block;}
-
-.nav-bar li {display: none;}
-
-.nav-bar a {
-    display: block;
-    padding: 15px;
-    text-align: right;
-    text-decoration: none;
+    background-color: pink;
     color: black;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    padding: 1rem;
+    position: relative;
+    font-family: "Roboto";
 }
 
-.nav-bar a:hover, .nav-bar a:active {color: purple; background-color: black;}
+.hamburger {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
-.show li {display: block;}
 
+/*Nav bar and links*/
+.navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: darkgreen;
+    width: 100%;
+}
 
-/*main, h3, */
-main {}
+.navLinks a:hover {background-color: white;}
+.navLinks.open {display: flex;}
 
-h3 {padding: 30px; text-align: center; font-size: 1.5rem;}
+.navLinks li {margin: 0.5rem 0;}
 
-img {max-width: 100%; width: 20%;}
+.navLinks a {
+	display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+	color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*main, h3, figure img, figcaption*/
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.images {display: grid; grid-template-columns: 1fr; gap: 1rem;}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1.title {font-size: 1.5rem; padding: 15px;}
+
+figure img {width: 100%; height: auto;}
 
 figcaption {
-    text-align: center; 
-    font-size: 14px; 
-    margin-top: 10px; 
-    color: #666; 
+    color: black;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins";
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
 
 /*Footer*/
 footer {
-    background-color: red;
-    color: white;
+    background-color: pink;
+    color: black;
     text-align: center;
     font-size: 15px;
-    padding: 20px;
+    padding: 10px;
+}
+#lastModified {color: black; font-style: italic; font-weight: 700;}
+
+@media only screen and (max-width: 600px) {
+    .navLinks a {font-size: 1.2rem;}
+  
+    .navLinks li:last-child {padding-bottom: 1.3rem; }
+  }
+
+  @media (max-width: 800px) and (max-width: 1024px){
+    .navLinks a {font-size: 1.2rem;}
+  }
+
+  @media (max-width: 800px) and (max-width: 1024px){
+    figcaption {font-size: 1.3rem;}
+  }
+
+  @media (max-width: 600px) {
+    header {align-items: flex-start; padding: 10px;}
+
+    h1.title {font-size: 1.5rem;}
 }

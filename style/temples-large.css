@@ -1,114 +1,50 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+@media only screen and (min-width: 700px) {
 
-body {font-family: "Roboto", "Open Sans", "Poppins";}
-
-
-/*Header and h1*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
-    padding: 1rem;
-}
-
-h1 {color: black; padding: 1rem;}
-
-
-/*Nav, ul, li and a*/
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-}
-
-#menu::before {content: "≡";}
-
-#menu.show::before {content: "X"; font-size: 1.2rem;}
-
-
-/*nav {background-color: red;}*/
-
-.nav-bar {list-style: none; margin: 0; max-width: 760px;}
-
-.nav-bar.show {display: block;}
-
-.nav-bar li {display: none;}
-
-.nav-bar a {
-    display: block;
-    padding: 15px;
-    text-align: right;
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-.nav-bar a:hover, .nav-bar a:active {color: purple; background-color: black;}
-
-.show li {display: block;}
-
-
-@media (max-width: 40em) {
     header {
+        display: flex;
         justify-content: space-between;
-    }
-
-
-    #menu {
-        margin-left: auto;
-        order: 2;
-    }
-
-    nav {
-        order: 1;
-    }
-}
-
-
-@media (min-width: 40em) {
-	.nav-bar {
-		display: flex;
-	}
-	.nav-bar li {
-		display: block; 
-		flex: 1 1 100%;
-	}
-	.nav-bar a {
-		text-align: center;
         align-items: center;
-        justify-content: center;
-	}
-	#menu {
-		display: none;
-	}
+        padding: 0.05rem 1rem; 
+    }
+
+    .title {flex-grow: 1;}
+
+    .hamburger {display: none; }
+
+    .navLinks {
+        display: flex; 
+        justify-content: flex-end; 
+        flex-direction: row;
+        flex-grow: 1;
+        position: static; 
+        background-color: transparent; 
+        width: auto; 
+    }
+
+    .navLinks li {margin: 0 5px; }
+
+    .navLinks a {padding: 0.5rem 1rem; font-size: 1.2rem;}
+
+    .navLinks a:hover {
+        background-color: white;
+        color: black; 
+        transition: 0.5s
+    }
+
+
+    main {
+        padding: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
 }
 
 
-/*main, h3, */
-main {}
 
-h3 {padding: 30px; text-align: center; font-size: 1.5rem;}
-
-img {max-width: 100%; width: 20%;}
-
-figcaption {
-    text-align: center; /* Alinha o texto centralmente */
-    font-size: 14px; /* Tamanho da fonte do legenda */
-    margin-top: 10px; /* Espaçamento superior */
-    color: #666; /* Cor do texto */
-}
-
-
-/*Footer*/
-footer {
-    background-color: red;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-}
