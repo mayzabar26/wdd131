@@ -5,13 +5,22 @@
     --header-footer-color: green;
     --text-color: blue;
     --main-font: 'Roboto';
-    --font-color: white;
+    --font-color-01: white;
+    --box-color: white;
+    --font-color-02: yellow;
+    --font-color-03: rgb(52, 52, 201);
 }
 
 body {background-color: var(--body-background-color);}
 
 /*Header*/
-h1 {font-family: var(--main-font); font-size: 3rem; padding: 1rem;}
+h1 {
+    font-family: var(--main-font); 
+    font-size: 3.4rem; 
+    padding: 1rem;
+    color: var(--font-color-01);
+    font-weight: 1000;
+}
 
 header {
     background-color: var(--header-footer-color);
@@ -41,10 +50,10 @@ img {display: block;
     position: absolute;
     width: 300px;
     height: 270px;
-    background-color: var(--text-color);
-    color: var(--font-color);
+    background-color: var(--box-color);
+    color: black;
     padding: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
     
 }
 
@@ -58,7 +67,7 @@ img {display: block;
     right: 20px;
 }
 
-.weather-list {padding: 35px;}
+.weather-list {padding: 25px;}
 
 h2 {
     padding: 10px; 
@@ -79,7 +88,7 @@ ul {margin: 15px; }
 li {
     list-style: none; 
     font-family: var(--main-font); 
-    color: var(--font-color);
+    color: black;
     text-align: right;
     align-items: center;
     justify-content: center;
@@ -90,8 +99,6 @@ strong {
     font-weight: bold; 
     text-align: right; 
 }
-
-.icon {}
 
 .icon-mobile {display: none;}
 
