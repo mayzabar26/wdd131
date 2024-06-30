@@ -53,7 +53,7 @@ img {display: block;
     background-color: var(--box-color);
     color: black;
     padding: 20px;
-    opacity: 0.9;
+    opacity: 0.8;
     
 }
 
@@ -107,10 +107,48 @@ strong {
 footer { 
     background-color: var(--header-footer-color);
     font-family: var(--main-font);
-    color: black;
+    color: var(--font-color-01);
     text-align: center;
     font-size: 1rem;
     padding: 3rem;
+    font-weight: 500;
 }
 
-#lastModified {color: blue;}
+#lastModified {color: var(--font-color-01);}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .data-box, .weather-box {
+        position: static;
+        width: 100%;
+        margin: 0;
+        opacity: 1;
+    }
+
+    .weather-box {
+        margin-top: 0.5px;
+    }
+
+    .img-container {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: transparent;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+}
+

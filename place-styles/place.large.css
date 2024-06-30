@@ -1,0 +1,32 @@
+@media (max-width: 500px) {
+    .img-container {
+        width: 100%;
+    }
+
+    picture img {
+        width: 100%;
+    }
+
+    .data-box, .weather-box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        opacity: 1;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: transparent;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+}
