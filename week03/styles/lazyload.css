@@ -1,0 +1,51 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+ :root {
+    --body-background-01: pink;
+    --body-background-02: gray;
+    --body-background-03: rgb(62, 59, 59);
+    --family-font: "Roboto";
+    --header-color: purple;
+    --footer-color: gray;
+    --font-color-01: white;
+    --font-color-02: black;
+    --font-color-03: yellow;
+ }
+
+body {background-color: var(--body-background-03);}
+
+header {padding: 2rem; background-color: var(--header-color);}
+
+h1 {font-family: var(--family-font); text-align: center; color: var(--font-color-01); font-weight: 700; font-style: italic;}
+
+.movies {
+    animation: fade 2s ease-in-out;
+}
+
+main {
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 1rem; 
+    gap: 1rem;
+    align-items: center;
+}
+
+.movies img {
+    opacity: 0; 
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+footer {background-color: var(--body-background-02); color: var(--font-color-01); text-align: center; padding: 1rem; font-family: var(--family-font);}
+
+#lastModified {color: black; font-style: italic;}

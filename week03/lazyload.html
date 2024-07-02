@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload Example</title>
+    <meta name="description" content="Lazyload Example">
+    <meta name="author" content="Mayza Costa Barbosa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>My favorites movies and series</h1>
+    </header>
+
+    <main>
+        <img class="movies" src="images/about-fate.jpg" loading="lazy" alt="About Fate Movie" width="400" height="600">
+        <img class="movies" src="images/avengers.jpg" loading="lazy" alt="Avangers Movie" width="400" height="600">
+        <img class="movies" src="images/friends.webp" loading="lazy" alt="Friends Series" width="400" height="600">
+        <img class="movies" src="images/gilmore-girls.webp" loading="lazy" alt="Gilmore Girls Series" width="400" height="600">
+        <img class="movies" src="images/gossip-girl.jpg" loading="lazy" alt="Gossip Girls Series" width="400" height="600">
+        <img class="movies" src="images/hotel-for-the-holidays.jpg" loading="lazy" alt="Hotel For The Holidays Movie" width="400" height="600">
+        <img class="movies" src="images/inside-out.jpeg" loading="lazy" alt="Inside Out Movie" width="400" height="600">
+        <img class="movies" src="images/it-ends-with-us.jpg" loading="lazy" alt="It Ends With Us Movie" width="400" height="600">
+        <img class="movies" src="images/jane.jpg" loading="lazy" alt="Jane Movie" width="400" height="600">
+        <img class="movies" src="images/mean-girls.png" loading="lazy" alt="Mean Girls Movie" width="400" height="600">
+        <img class="movies" src="images/riverdale.webp" loading="lazy" alt="Riverdale Series" width="400" height="600">
+        <img class="movies" src="images/sightless.jpg" loading="lazy" alt="Sightless Movie" width="400" height="600">
+        <img class="movies" src="images/the-incredibles.jpg" loading="lazy" alt="The Incredibles Movie" width="400" height="600">
+        <img class="movies" src="images/the-parent-trap.jpg" loading="lazy" alt="The Parent Trap Movie" width="400" height="600">
+        <img class="movies" src="images/the-strangers.jpg" loading="lazy" alt="The Strangers Movie" width="400" height="600">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🍒 Mayza Costa Barbosa 🍒 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
